@@ -1,0 +1,32 @@
+<script>
+    var ref = document.referrer;
+    if(!ref){
+        window.location = "index.php";
+    }
+</script>
+<hr>
+<form method="post" action="feedback.php">
+    <p>
+        <label>Comments and feedback:<br>
+            <textarea name="comments" rows="4" cols="36">Please enter your comments here.</textarea>
+        </label>
+    </p>
+
+    <p>
+        <label>Phone Number:<br>
+            <input type="tel" name="phone" placeholder="(###) ###-####">
+            (###) ###-####
+        </label>
+    </p>
+
+    <p>
+        <label>Email:<br>
+            <input type="email" name="email" placeholder="user@domain.xxx"
+                    required>
+            (user@domain.xxx)
+        </label>
+    </p>
+
+    <input type="submit" class="myButton" value="Submit">
+
+</form>
